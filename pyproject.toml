@@ -7,6 +7,7 @@ dependencies = [
     "astro-delight>=0.1.0",
     "astro-prost>=1.2.13",
     "astropy>=8.0.1",
+    "hostphot>=3.2.3",
     "lasair>=0.1.4",
     "lsdb>=0.11.0",
     "matplotlib>=3.11.2",
