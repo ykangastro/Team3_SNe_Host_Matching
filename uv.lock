@@ -215,6 +215,27 @@ wheels = [
 ]
 
 [[package]]
+name = "antares-client"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "astropy" },
+    { name = "astropy-healpix" },
+    { name = "bson" },
+    { name = "click" },
+    { name = "httpx" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "pydantic" },
+    { name = "requests" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2d/00/01feb417855484539c29a8b9e938fc71609cb23fc56cb4c7af2f2963ff7c/antares_client-2.0.0.tar.gz", hash = "sha256:011e697f33a9f7ca1d61d704617809a74958bd4110c55ff49668f6f55887a78c", size = 17313, upload-time = "2026-10-07T20:56:52.268Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f8/24/3e53da01b753ec8d8798cc6b37a48ee3f5d7571593ff5f6a5b26ebfc528b/antares_client-2.0.0-py3-none-any.whl", hash = "sha256:0a226fd2d90e464996abc8f89d57e58957931bd504c63fe756ddf6ef3ddac427", size = 22308, upload-time = "2026-10-07T20:56:50.961Z" },
+]
+
+[[package]]
 name = "anyio"
 version = "4.15.1"
 source = { registry = "https://pypi.org/simple" }
@@ -552,6 +573,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/4c/e8/93d270023eb987348
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c5/0a/1423bb61b5f06376fe6ccf79c8781e2bb5e36c78c1814c78913b7425950f/bokeh-3.10.0-py3-none-any.whl", hash = "sha256:6bb8dbd4a555f71a921be5bd45c3bfaa15b390257fbadae76901927bd58629b7", size = 6649702, upload-time = "2026-08-18T17:47:07.287Z" },
 ]
+
+[[package]]
+name = "bson"
+version = "0.5.10"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "python-dateutil" },
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4d/53/7c534a38850f2252275d7f949aed2219095e90df1e2d180a9c8ed139e499/bson-0.5.10.tar.gz", hash = "sha256:d6511b2ab051139a9123c184de1a04227262173ad593429d21e443d6462d6590", size = 10363, upload-time = "2020-05-26T11:13:47.979Z" }
 
 [[package]]
 name = "cdshealpix"
@@ -5054,6 +5085,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "alerce" },
+    { name = "antares-client" },
     { name = "astro-delight" },
     { name = "astro-prost" },
     { name = "astropy" },
@@ -5081,6 +5113,7 @@ extras = [
 [package.metadata]
 requires-dist = [
     { name = "alerce", specifier = ">=2.3.1" },
+    { name = "antares-client", specifier = ">=2.0.0" },
     { name = "astro-delight", specifier = ">=0.1.0" },
     { name = "astro-prost", specifier = ">=1.2.13" },
     { name = "astropy", specifier = ">=8.0.1" },
